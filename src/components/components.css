@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+}
+.users_posts{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+    text-align: center;
+}
+.posts > div{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 10px;
+    column-gap: 10px;
+    background: antiquewhite;
+    border: 1px solid #4f4848;
+    font-size: 14px;
+    justify-content: center;
+
+}
+.user{
+    width: 400px;
+    background:  aquamarine;
+
+}
+.post{
+    width: 280px;
+    border: solid 1px;
+}
+.comments{
+
+    background: beige;
+    border: solid 1px;
+    margin-top: 5px;
+
+
+}
+.comments > div{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    row-gap: 5px;
+    column-gap: 5px;
+    margin-top: 5px;
+    flex-direction: row;
+    text-align: center;
+}
+
+.comment{
+    width: 370px;
+    height: 200px;
+    border: solid 1px;
+
+}
