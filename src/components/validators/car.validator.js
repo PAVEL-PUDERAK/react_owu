@@ -1,7 +1,7 @@
 import Joi from "joi";
 
 const carValidator = Joi.object({
-    model:Joi.string().min(2).max(20).required().messages({
+    brand:Joi.string().min(2).max(20).required().messages({
             'string.empty':'Вкажіть назву машини',
             'string.min': 'Повинно бути не менше двох символів',
             'string.max': 'Не більше 20 символів',

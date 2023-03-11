@@ -26,20 +26,22 @@ const CarForm =  ({carUpdater,setCarUpdater,SetNewCar}) => {
     };
     useEffect(() => {
         if (carUpdater){
-            const {model,price,year} = carUpdater;
-            setValue('model',model  )
+            const {brand,price,year} = carUpdater;
+            setValue('brand',brand  )
             setValue('price',price  )
             setValue('year',year  )
+
         }
 
+
     }
-    ,[carUpdater, setValue])
+    ,[carUpdater, (setValue)])
 
 
 
     return (
         <form onSubmit={handleSubmit(submit)}>
-            <div><label><b>Model:</b> <input type="text"{...register('model')}/></label></div>
+            <div><label><b>Brand:</b> <input type="text"{...register('brand')}/></label></div>
             {errors.model && <span>{errors.model.message}</span>}
             <div><label><b>Price:</b> <input type="text"{...register('price',{valueAsNumber:true})}/></label></div>
             {errors.price && <span>{errors.price.message}</span>}
