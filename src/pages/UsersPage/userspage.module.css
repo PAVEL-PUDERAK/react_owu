@@ -1,0 +1,7 @@
+.users_details{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+}

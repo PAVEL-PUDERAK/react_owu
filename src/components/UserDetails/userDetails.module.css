@@ -1,0 +1,13 @@
+.user_det{
+    width: 400px;
+    height: 400px;
+    box-sizing: border-box;
+    border: solid goldenrod 2px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin-right: 200px;
+}
